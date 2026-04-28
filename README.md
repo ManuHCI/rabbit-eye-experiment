@@ -36,7 +36,7 @@ An interactive desktop simulator for the **rabbit eye pharmacology experiment**,
 
 The classical rabbit eye experiment is a cornerstone of autonomic pharmacology teaching, demonstrating the effects of mydriatics, miotics, and local anaesthetics on pupil size, light reflex, and corneal sensitivity. However, conducting this experiment on live animals raises significant ethical, regulatory, and logistical challenges, and is now actively discouraged by the National Medical Commission (NMC) and the Committee for the Purpose of Control and Supervision of Experiments on Animals (CPCSEA).
 
-This simulator is a **3R-compliant (Replacement, Reduction, Refinement)** alternative, built using real photographs of rabbit eyes captured at MAMC, that lets students perform the full experimental workflow virtually — without compromising on learning outcomes.
+This simulator is a **3R-compliant (Replacement, Reduction, Refinement)** alternative, built using AI generated (ChatGPT) photographs of rabbit eyes, that lets students perform the full experimental workflow virtually without compromising on learning outcomes.
 
 ## ✨ Features
 
