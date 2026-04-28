@@ -1,0 +1,19 @@
+# Rabbit Eye Experiment Simulator — Python dependencies
+#
+# Tkinter is part of the Python standard library and does NOT need to be
+# listed here. On most Linux distributions you may need to install it via
+# the system package manager (e.g. `sudo apt install python3-tk`).
+
+# ----- Core image handling -----
+Pillow>=10.0.0          # image loading, resizing, manipulation for eye photographs
+
+# ----- Optional / commonly used in the simulator -----
+# Uncomment the lines you actually use in your code.
+
+# numpy>=1.24.0         # numerical operations (e.g. pupil-size modelling)
+# matplotlib>=3.7.0     # plotting / charting (if you display graphs)
+# pandas>=2.0.0         # observation table export to CSV/Excel
+
+# ----- Build tooling (only needed to package as .exe) -----
+# Move to requirements-dev.txt if you want to keep runtime deps minimal.
+# pyinstaller>=6.0.0

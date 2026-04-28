@@ -1,0 +1,82 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+develop-eggs/
+dist/
+build/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ===== Virtual Environments =====
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# ===== PyInstaller =====
+# Note: do NOT commit .exe builds — distribute via GitHub Releases instead
+*.spec
+build/
+dist/
+*.exe
+*.app
+
+# ===== IDEs / Editors =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Jupyter / Testing =====
+.ipynb_checkpoints/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.log
+
+# ===== OS-specific =====
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# ===== Project-specific =====
+# Local config / secrets
+*.local
+.env
+config.local.json
+
+# User-generated experiment data
+exports/
+output/
+observations_*.csv
+
+# Large binary assets (use Git LFS if needed)
+*.psd
+*.tif
+*.tiff
