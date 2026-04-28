@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rabbit Eye Experiment Simulator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -164,3 +165,7 @@ For issues and feature requests, please use the [GitHub Issues](../../issues) pa
 ---
 
 *Built with Python, Tkinter, and a commitment to ethical medical education.*
+=======
+# rabbit-eye-experiment
+An interactive desktop simulator for the rabbit eye pharmacology experiment, designed as an ethical, animal-free alternative for undergraduate (MBBS) pharmacology practical training. 
+>>>>>>> d3eb9a02babbce837f8f3816c747b7b48ea1b9bb
