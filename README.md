@@ -32,26 +32,26 @@ An interactive desktop simulator for the **rabbit eye pharmacology experiment**,
 
 ---
 
-## 🐇 Background
+## Background
 
 The classical rabbit eye experiment is a cornerstone of autonomic pharmacology teaching, demonstrating the effects of mydriatics, miotics, and local anaesthetics on pupil size, light reflex, and corneal sensitivity. However, conducting this experiment on live animals raises significant ethical, regulatory, and logistical challenges, and is now actively discouraged by the National Medical Commission (NMC) and the Committee for the Purpose of Control and Supervision of Experiments on Animals (CPCSEA).
 
 This simulator is a **3R-compliant (Replacement, Reduction, Refinement)** alternative, built using AI generated (ChatGPT) photographs of rabbit eyes, that lets students perform the full experimental workflow virtually without compromising on learning outcomes.
 
-## ✨ Features
+## Features
 
 - **Photograph-based realism** — uses actual rabbit eye images from MAMC archives
 - **Dual-eye setup** — independent left and right eye for control vs. test comparison
 - **Interactive instruments**:
-  - 🔦 Movable torch for light reflex testing
-  - 📏 Drag-and-drop ruler for pupil measurement
-  - 🧵 Cotton swab for corneal reflex assessment
+  - Movable torch for light reflex testing
+  - Drag-and-drop ruler for pupil measurement
+  - Cotton swab for corneal reflex assessment
 - **Drug library** covering autonomic agents (mydriatics, miotics, anaesthetics)
 - **Self-contained executable** — no Python installation required for end users
 - **Offline operation** — runs entirely without internet connectivity
 - **Designed for non-technical faculty** — single-click `.exe` distribution
 
-## 📸 Screenshots
+## Screenshots
 
 > *Add screenshots in the `docs/screenshots/` folder and reference them here.*
 
@@ -63,7 +63,7 @@ docs/
     └── reflex_test.png
 ```
 
-## 🚀 Installation
+## Installation
 
 ### Option 1: Run from source (recommended for developers)
 
@@ -94,7 +94,7 @@ python main.py
 
 > The executable is unsigned. Windows SmartScreen may show a warning; click *More info → Run anyway*.
 
-## 🖱️ Usage
+## Usage
 
 1. **Launch** the application — the main window shows two rabbit eyes (left and right).
 2. **Select a drug** from the drug panel (e.g., Atropine, Pilocarpine, Lignocaine).
@@ -104,7 +104,7 @@ python main.py
 6. **Record observations** in the built-in observation table.
 7. **Compare** test vs. control eye to deduce the drug's autonomic action.
 
-## 💻 System Requirements
+## System Requirements
 
 | Component | Minimum |
 |-----------|---------|
@@ -114,7 +114,7 @@ python main.py
 | Disk Space | 100 MB |
 | Display | 1366×768 or higher |
 
-## 🎓 Educational Use
+## Educational Use
 
 This tool is intended for:
 
@@ -125,7 +125,7 @@ This tool is intended for:
 
 Faculty are encouraged to incorporate it into Small Group Discussions (SGDs) and competency-based assessments aligned with the NMC Competency-Based Medical Education (CBME) curriculum.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, bug reports, and pedagogical suggestions are warmly welcome. Please:
 
@@ -137,11 +137,11 @@ Contributions, bug reports, and pedagogical suggestions are warmly welcome. Plea
 
 For major changes, please open an issue first to discuss what you'd like to change.
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
-## 📚 Citation
+## Citation
 
 If you use this simulator in teaching or research, please cite:
 
@@ -151,13 +151,13 @@ Department of Pharmacology, Maulana Azad Medical College, New Delhi.
 https://github.com/<your-username>/rabbit-eye-experiment
 ```
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - **Department of Pharmacology, MAMC & LNH, New Delhi** — for institutional support and source photographs
 - **MAMC Faculty Association** — for encouraging open educational resources
 - All MBBS and PG students whose feedback shaped iterative improvements
 
-## 📬 Contact
+## Contact
 
 **Dr. Manu Kumar Shetty**
 Professor, Department of Pharmacology
