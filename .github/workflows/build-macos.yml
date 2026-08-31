@@ -1,0 +1,71 @@
+name: Build macOS Public Beta
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "macos_app/**"
+      - "requirements-macos.txt"
+      - ".github/workflows/build-macos.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-13
+
+    steps:
+      - name: Get source files
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install build packages
+        run: python -m pip install --upgrade pip && python -m pip install -r requirements-macos.txt
+
+      - name: Check Python files
+        run: python -m compileall -q macos_app
+
+      - name: Build Mac application
+        run: |
+          python -m PyInstaller \
+            --noconfirm \
+            --clean \
+            --windowed \
+            --name "Pharmacology CAL" \
+            --icon "macos_app/assets/cal_public_beta.png" \
+            --add-data "macos_app/assets:assets" \
+            "macos_app/main.py"
+
+      - name: Sign and prepare download
+        run: |
+          codesign --force --deep --sign - "dist/Pharmacology CAL.app"
+          ditto -c -k --sequesterRsrc --keepParent \
+            "dist/Pharmacology CAL.app" \
+            "Pharmacology_CAL_macOS_Public_Beta_v1.0.zip"
+          shasum -a 256 "Pharmacology_CAL_macOS_Public_Beta_v1.0.zip" \
+            > "Pharmacology_CAL_macOS_Public_Beta_v1.0_SHA256.txt"
+
+      - name: Save workflow copy
+        uses: actions/upload-artifact@v4
+        with:
+          name: Pharmacology CAL macOS Public Beta
+          path: |
+            Pharmacology_CAL_macOS_Public_Beta_v1.0.zip
+            Pharmacology_CAL_macOS_Public_Beta_v1.0_SHA256.txt
+
+      - name: Add files to the public beta release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload v1.0.0-beta.1 \
+            "Pharmacology_CAL_macOS_Public_Beta_v1.0.zip" \
+            "Pharmacology_CAL_macOS_Public_Beta_v1.0_SHA256.txt" \
+            --clobber
