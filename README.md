@@ -12,6 +12,14 @@ This public beta includes interactive animal model experiments for students and 
 
 Open the downloaded file. Windows may show a security message because the application is not digitally signed. Select **More info** and then **Run anyway**.
 
+### Windows 7
+
+[Download the Windows 7 legacy application](https://github.com/ManuHCI/Computer-Assisted-Learning-/releases/download/v1.0.0-beta.1/Pharmacology_CAL_Windows_7_Legacy_Beta_v1.0.exe)
+
+This version is for 64 bit Windows 7 SP1. The required Windows runtime files are included.
+
+This is a legacy beta version. Please test it and share feedback if you find any problem. The built in Frog simulator is used in this version.
+
 ### Mac with Apple silicon
 
 [Download the Mac application](https://github.com/ManuHCI/Computer-Assisted-Learning-/releases/download/v1.0.0-beta.1/Pharmacology_CAL_macOS_Public_Beta_v1.0.zip)
